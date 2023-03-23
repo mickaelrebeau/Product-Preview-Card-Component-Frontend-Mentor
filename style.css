@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-mobile {
+    display: none;
+}
+
+.image-destop {
+    display: block;
+    width: 390px;
+    height: 520px;
+
+    border-radius: 10px 0 0 10px;
+}
+
+.infos {
+    width: 390px;
+    height: 520px;
+    padding: 40px;
+
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    padding: 20px 0;
+
+    font-family: 'Fraunces', serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+p { 
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.prices {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+h4 {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(29, 71, 56);
+}
+
+h5 {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-mobile {
+        display: block;
+        width: 390px;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .image-destop {
+        display: none;
+    }
+
+    .infos {
+        border-radius: 0 0 10px 10px;
+    }
+}
